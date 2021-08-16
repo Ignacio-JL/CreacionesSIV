@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos para ofrecerte ayuda y soporte. ¡Atencion inmediata!">
+    <meta name="keywords" content="Indumentaria, Mayorista, Ropa, Niños, Fabricantes, Textil">
+    <title>SIV - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="reset">
+            <a href="../index.html"><img src="../img/logo.jpg" alt="logo" class="header__logo"></a>
+            <h1 class="header__title">Creaciones SIV</h1>
+        </div>
+        <div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+            </nav>
+        </div>
+        <section id="contactoNav">
+            <nav class="menu">
+                <ul>
+
+                    <li class="menu__item"><a href="../index.html" class="menu__item--pagesNav">Inicio</a></li>
+
+                    <!--Item despegable-->
+                    <li class="menu__item">
+                        <a class="nav-link dropdown-toggle menu__item--pagesNav" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="productos.html#niños">Niños</a></li>
+                            <li><a class="dropdown-item" href="productos.html#niñas">Niñas</a></li>
+                            <li><a class="dropdown-item" href="productos.html#bebes">Bebés</a></li>
+                            <li><a class="dropdown-item" href="productos.html#mas">Más</a></li>
+                        </ul>      
+                    </li>
+
+                    <li class="menu__item"><a href="seguimiento.html" class="menu__item--pagesNav">Seguimiento</a></li>
+                    <li class="menu__item"><a href="nosotros.html" class="menu__item--pagesNav">Nosotros</a></li>
+                    <li class="menu__item"><a href="contacto.html" class="menu__item--pagesNav">Contacto</a></li>
+
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <main>
+
+        <h2>CONTACTO</h2>
+        <section id="formContacto">
+            <div class="reset">
+                <form action="https://formspree.io/f/mnqlzrnn" method="POST">
+                    <fieldset>
+                        <legend>Formulario Contacto</legend>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input class="sizeTextInput" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+
+                        <div>
+                            <label for="asunto">Asunto</label>
+                            <select name="asunto" id="asunto">
+                            <option value="mayorista">Mayorista</option>
+                            <option value="minorista">Minorista</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        </div>
+                        <div>
+                            <label for="email">Correo electronico</label>
+                            <input class="sizeTextInput" type="email" name="_replyto" id="email" placeholder="Ingresa tu correo electronico">
+                        </div>
+
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <br/>
+                            <textarea name="message" placeholder="Ingresa el mensaje" id="mensaje" class="sizeTextArea"></textarea>
+                        </div>
+
+                        <div class="reset textCenter">
+                            <label for="hombre">Hombre</label>
+                            <input type="radio" name="genero" value="hombre" id="hombre">
+                            <label for="mujer">Mujer</label>
+                            <input type="radio" name="genero" value="mujer" id="mujer">
+
+                            <label for="aceptarNovedades">Quiero recibir novedades semanales</label>
+                            <input type="checkbox" name="aceptarNovedades" value="1" id="aceptarNovedades">
+                        </div>
+
+                        <div class="textCenter">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar campos">
+                        </div>
+                    </fieldset>
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="colorText ">
+            <h3 class="footer__title">INFORMACION DEL NEGOCIO</h3>
+
+            <section class="redesFooter">
+                <nav>
+                    <ul>
+                        <li class="menu__item">
+                            <a href="https://www.facebook.com" target="_blank" class="iconFacebook"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://www.instagram.com" target="_blank" class="iconInstagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <P>
+                Estamos ubicados en Bacacay 3474, Galería Las Chozas entre Emilio Lamarca y Concordia.
+            </P>
+            <P>
+                Horarios de atención
+            </P>
+            <p>
+                Lunes a Viernes de 08hs a 19hs.
+            </p>
+            <p>
+                Sabados de 09hs a 13:30hs.
+            </p>
+            <P>
+                Numero +549 1170969187
+            </P>
+            <p class="textCenter">
+                Creditos: José Luis Ignacio <a href="https://www.linkedin.com/in/joseluis-ignacio98/" target="_blank" class="iconLinkedIn"><i class="fab fa-linkedin"></i></a>
+            </p>
+            <!--Ubicacion en mapa-->
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

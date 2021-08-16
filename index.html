@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Ejemplo de merge de rama secundary en rama master -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venta mayorista y minorista de indumentaria infantil con la mejor calidad. ¡Envios a todo el país!">
+    <meta name="keywords" content="Indumentaria, Mayorista, Ropa, Niños, Fabricantes, Textil">
+    <title>Creaciones SIV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="reset">
+            <a href="index.html"><img src="img/logo.jpg" alt="logo" class="header__logo"></a>
+            <h1 class="header__title">Creaciones SIV</h1>
+        </div>
+        <div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
+            </ol>
+            </nav>
+        </div>
+        
+        <!--Barra de navegacion-->
+        <section id="indexNav">
+            <nav class="menu">
+                <ul>
+                    <li class="menu__item"><a href="index.html" class="menu__item--pagesNav">Inicio</a></li>
+                    <!--Item despegable-->
+                    <li class="menu__item">
+                        <a class="nav-link dropdown-toggle menu__item--pagesNav" href="pages/productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="pages/productos.html#niños">Niños</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#niñas">Niñas</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#bebes">Bebés</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#mas">Más</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu__item"><a href="pages/seguimiento.html" class="menu__item--pagesNav">Seguimiento</a></li>
+                    <li class="menu__item"><a href="pages/nosotros.html" class="menu__item--pagesNav">Nosotros</a></li>
+                    <li class="menu__item"><a href="pages/contacto.html" class="menu__item--pagesNav">Contacto</a></li> 
+
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <main>
+        <!--Imagenes Dezplasantes-->
+
+        <section>
+            <!-- Carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/imgBienvenida1.jpg" class="d-block w-100" alt="Imagen de inicio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imgBienvenida2.jpg" class="d-block w-100" alt="Imagen de inicio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imgBienvenida3.jpg" class="d-block w-100" alt="Imagen de inicio">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </section>
+
+        <section id="infoIndex">
+            <h2>Quienes Somos</h2>
+            <div class="colorText nosotrosFlexbox">
+                <div class="reset">
+                    <p>
+                        Somos <strong>Creaciones SIV</strong>, un emprendimiento con mas de 20 años en la industria. Trabajamos de la manera más segura posible para ambas partes. En toda nuestra trayectoria hemos sumado numerosos clientes que nos han
+                        elegido por nuestra atencion, calidad y compromiso en nuestro trabajo.
+                    </p>
+                </div>
+                <div class="reset">
+                    <p>
+                        Le ofrecemos una amplia gama de artículos directa de nuestra fabricación con los precios más accesibles en el mercado para tu negocio. Nuestro especializado personal le brindará una impecable atención y experiencia en nuestro local ubicado en pleno centro
+                        comercial del barrio de Flores (CABA).
+                        <a href="pages/nosotros.html" class="italica negrita">Ver más...</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="promocionInicio">
+            <div class="reset">
+                <div id="categoriasFlexbox">
+
+                    <article class="categorias">
+                        <!--Imagen-->
+                        <img src="img/nino.jpg" alt="niño" class="categorias__imagenesVitrina">
+                        <h3 class="textCenter tituloVitrinaIndex">Niños</h3>
+                    </article>
+
+                    <article class="categorias">
+                        <!--Imagen-->
+                        <img src="img/nina.jpg" alt="niña" class="categorias__imagenesVitrina">
+                        <h3 class="textCenter tituloVitrinaIndex">Niñas</h3>
+                    </article>
+
+                    <article class="categorias">
+                        <!--Imagen-->
+                        <img src="img/bebes.jpg" alt="bebes" class="categorias__imagenesVitrina">
+                        <h3 class="textCenter tituloVitrinaIndex">Bebes</h3>
+                    </article>
+
+                    <article class="categorias">
+                        <!--Imagen-->
+                        <img src="img/varios.jpg" alt="varios" class="categorias__imagenesVitrina">
+                        <h3 class="textCenter tituloVitrinaIndex">Mas!</h3>
+                    </article>
+                </div>
+
+                <div class="reset">
+                    <h2 class="tituloLargo">RECOMENDADOS - PROMOCIONES</h2>
+                </div>
+
+                <div id="recomendadosFlexbox">
+                    <article class="recomendados">
+                        <!--Imagen-->
+                        <img src="img/camperaBebe.jpg" alt="camperaBebe" class="categorias__imagenesVitrina">
+                        <h3 class="textCenter tituloVitrinaIndex">Campera de Bebe</h3>
+                    </article>
+
+                    <article class="recomendados">
+                        <!--Imagen-->
+                        <img src="img/camperaNino.jpg" alt="camperaNiño" class="categorias__imagenesVitrina">
+                        <h3 class="textCenter tituloVitrinaIndex">Campera de Niño</h3>
+                    </article>
+
+                    <article class="recomendados">
+                        <!--Imagen-->
+                        <img src="img/unisex.jpg" alt="buzoUnisex" class="categorias__imagenesVitrina">
+                        <h3 class="textCenter tituloVitrinaIndex">Buzos Unisex</h3>
+                    </article>
+
+                    <article class="recomendados">
+                        <!--Imagen-->
+                        <img src="img/sweater.jpg" alt="sweater" class="categorias__imagenesVitrina">
+                        <h3 class="textCenter tituloVitrinaIndex">Sweater Niña</h3>
+                    </article>
+                </div>
+        </section>
+
+        <div class="promoSub">
+            <h4 class="promoSub__title">Enterate de nuestras novedades semanalmente</h4>
+            <!--Introduccion de correo electronico-->
+            <p>Suscribiendote seras de los primeros en enterarte de nuestras PROMOCIONES y productos nuevos. Además participas en increibles sorteos y descuentos para tus compras.
+            </p>
+            <!--Imagen Productos Proximamente-->
+            <form action="" method="POST" class="promoForm">
+                <input type="email" name="correoPromo" class="sizeTextInput promoForm__input" placeholder="Ingresar tu correo para participar">
+                <button class="promoForm__Button">Aceptar</button>
+            </form>
+        </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="colorText ">
+            <h3 class="footer__title">INFORMACION DEL NEGOCIO</h3>
+
+            <section class="redesFooter">
+                <nav>
+                    <ul>
+                        <li class="menu__item">
+                            <a href="https://www.facebook.com" target="_blank" class="iconFacebook"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://www.instagram.com" target="_blank" class="iconInstagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <P>
+                Estamos ubicados en Bacacay 3474, Galería Las Chozas entre Emilio Lamarca y Concordia.
+            </P>
+            <P>
+                Horarios de atención
+            </P>
+            <p>
+                Lunes a Viernes de 08hs a 19hs.
+            </p>
+            <p>
+                Sabados de 09hs a 13:30hs.
+            </p>
+            <P>
+                Numero +549 1170969187
+            </P>
+            <p class="textCenter">
+                Creditos: José Luis Ignacio <a href="https://www.linkedin.com/in/joseluis-ignacio98/" target="_blank" class="iconLinkedIn"><i class="fab fa-linkedin"></i></a>
+            </p>
+            <!--Ubicacion en mapa-->
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
