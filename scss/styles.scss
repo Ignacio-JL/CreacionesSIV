@@ -45,7 +45,29 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     .nav-link {
         padding: 0;
         border-radius: 50px;
-        text-decoration: underline;
+        
+    }
+    .nav-link:focus{
+        color: #ECC452;
+    }
+    a.dropdown-item{
+        padding: 0;
+        
+    }
+    ul li a.dropdown-item{
+        color: #777777;
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus{
+        color: #ECC452;
+        margin-left: 0px;
+        padding-left: 10px;
+        text-align: left;
+        background-color: #FFFFFF;
+    }
+    ul.dropdown-menu{
+        color: #000000;
+        padding:0;
     }
     // modificar carousel padding auto a apartir de >768px
     .carousel{
@@ -62,11 +84,10 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     .dropdown-menu {
         font-size: 10px;
         border: none;
-        background-color: unset;
     }
     // Retoque bootstrap
     body {
-        background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+        
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
     }
@@ -123,14 +144,21 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     h1,
     h2 {
         @include titulos(25px, $colorh1h2);
-        background-color: #C0392B;
+        
         font-size: 25px;
         text-align: center;
         letter-spacing: 1px;
         word-spacing: 15px;
-        font-family: 'Titillium Web', sans-serif;
         font-weight: 700;
         margin: 5vh 25vw;
+    }
+    h1{
+        font-family: 'Bellefair', serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    h2{
+        font-family: 'Titillium Web', sans-serif;
     }
     /* parrrafoDobleNosotros Similar a index */
     .nosotrosFlexbox div {
@@ -139,6 +167,19 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         margin: 20px;
     }
     .nosotrosFlexbox {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex: 1;
+        padding: 0px;
+    }
+    .mapFlexbox div {
+        display: inline-block;
+        width: 90%;
+        min-height: 270px;
+        margin: 20px;
+    }
+    .mapFlexbox {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -207,9 +248,11 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         -webkit-background-clip: text;
     }
     .menu {
-        height: 130px;
-        padding: 20px;
+        height: 40px;
+        padding-top: 5px;;
+        margin-top: 10px;
         margin-bottom: 0px;
+        background-color: #000000;
     }
     .menu__item {
         list-style: none;
@@ -218,6 +261,8 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     }
     .menu__item a {
         font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
         margin: auto 0px;
     }
     nav ul {
@@ -226,11 +271,13 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     nav ul .menu__item {
         margin: 2px;
     }
+    ul li a.menu__item--pagesNav{
+        color: #FFFFFF;
+    }
     ul li a.menu__item--pagesNav:hover {
-        background-color: #426e6e;
-        color: white;
-        padding: 3px;
-        border-radius: 50px;
+        
+        color: #ECC452;
+        padding-left: 3px; 
     }
     .italica {
         font-style: italic;
@@ -364,11 +411,21 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     .nosotrosFlexbox div {
         width: 40%;
     }
+    .mapFlexbox div {
+        width: 40%;
+    }
     #tienda {
         grid-template-columns: repeat(3, 1fr);
     }
+    ul.dropdown-menu{       
+        padding: 0.5rem 0;
+    }
     .dropdown-menu {
         font-size: 1rem;
+    }
+    a.dropdown-item{
+        padding: 0.25rem 1rem;
+        padding-left: 0;   
     }
     h1,
     h2 {
@@ -393,8 +450,8 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         margin: 9px;
     }
     .menu {
-        height: 170px;
-        margin-bottom: 70px;
+        height: 60px;
+        margin-bottom: 10px;
     }
     #imagenesInicio {
         border: 5px solid #FFFFFF;
@@ -448,8 +505,8 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         margin-right: 5%;
     }
     img.categorias__imagenesVitrina {
-        height: 250px;
-        width: 180px;
+        height: 270px;
+        width: 215px;
     }
 }
 
@@ -457,9 +514,10 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
 /*TABLET VERTICAL*/
 
 {
+    
     .menu__item {
         list-style: none;
-        font-size: 25px;
+        
         display: inline-block;
     }
     .menu__item a {
@@ -471,6 +529,10 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     }
     div article.categorias {
         margin: 10px 1vw;
+    }
+    img.categorias__imagenesVitrina {
+        height: 260px;
+        width: 190px;
     }
     article.recomendados {
         margin: 10px 1vw;
