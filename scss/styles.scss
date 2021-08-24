@@ -188,9 +188,17 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         display: inline-block;
         margin: 10px 50px;
     }
+    div.tituloVitrinaIndex .enlaceVitrina{
+        @extend h3;
+        text-decoration: none;
+    }
+    div.tituloVitrinaIndex a.enlaceVitrina:hover{
+        color: #ECC452;
+    }
     article.recomendados {
         display: inline-block;
         margin: 10px 45px;
+        text-align: center;
     }
     article h3 {
         margin-top: 7px;
@@ -199,6 +207,7 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         height: 195px;
         width: 140px;
         transition: all 2s;
+        text-align: center;
     }
     /* Transform */
     img.categorias__imagenesVitrina:hover {
@@ -402,7 +411,8 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         padding: auto;
     }
     .carousel-inner{
-        padding: auto;
+        padding-left: 13%;
+        padding-right: 13%;
     }
 
     .nosotrosFlexbox div {
@@ -484,15 +494,13 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         grid-column-gap: 50px;
     }
     section#tienda .productosTienda {
-        width: 200px;
-        height: 340px;
         border-radius: 40px;
         justify-content: flex-end;
         font-size: auto;
     }
     article.productosTienda img {
-        max-height: 206px;
-        max-width: 198px;
+        height: 206px;
+        width: 170px;
     }
     p {
         font-size: 18px;

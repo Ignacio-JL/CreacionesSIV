@@ -127,19 +127,25 @@
   div article.categorias {
     display: inline-block;
     margin: 10px 50px; }
+  div.tituloVitrinaIndex .enlaceVitrina {
+    text-decoration: none; }
+  div.tituloVitrinaIndex a.enlaceVitrina:hover {
+    color: #ECC452; }
   article.recomendados {
     display: inline-block;
-    margin: 10px 45px; }
-  article h3 {
+    margin: 10px 45px;
+    text-align: center; }
+  article h3, article div.tituloVitrinaIndex .enlaceVitrina, div.tituloVitrinaIndex article .enlaceVitrina {
     margin-top: 7px; }
   img.categorias__imagenesVitrina {
     height: 195px;
     width: 140px;
-    transition: all 2s; }
+    transition: all 2s;
+    text-align: center; }
   /* Transform */
   img.categorias__imagenesVitrina:hover {
     transform: scale(1.22, 1.1); }
-  h3 {
+  h3, div.tituloVitrinaIndex .enlaceVitrina {
     font-size: 20px;
     color: #000;
     text-align: center; }
@@ -294,7 +300,8 @@
   .carousel {
     padding: auto; }
   .carousel-inner {
-    padding: auto; }
+    padding-left: 13%;
+    padding-right: 13%; }
   .nosotrosFlexbox div {
     width: 40%; }
   .mapFlexbox div {
@@ -311,7 +318,7 @@
   h1,
   h2 {
     font-size: 50px; }
-  h3 {
+  h3, div.tituloVitrinaIndex .enlaceVitrina {
     font-size: 25px; }
   .iconFacebook {
     font-size: 50px; }
@@ -352,14 +359,12 @@
     grid-row-gap: 100px;
     grid-column-gap: 50px; }
   section#tienda .productosTienda {
-    width: 200px;
-    height: 340px;
     border-radius: 40px;
     justify-content: flex-end;
     font-size: auto; }
   article.productosTienda img {
-    max-height: 206px;
-    max-width: 198px; }
+    height: 206px;
+    width: 170px; }
   p {
     font-size: 18px; }
   #infoNosotros {
