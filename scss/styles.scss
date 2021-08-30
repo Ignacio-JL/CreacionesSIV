@@ -6,7 +6,6 @@
 
 
 /* ANIMACION */
-
 @keyframes aparecer {
     0% {
         opacity: 0;
@@ -184,6 +183,7 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         padding: 0px;
     }
     /* parrrafoDobleNosotros Similar a index */
+    
     div article.categorias {
         display: inline-block;
         margin: 10px 50px;
@@ -203,11 +203,15 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     article h3 {
         margin-top: 7px;
     }
+    article img.categorias__imagenesVitrina{
+        border: 5px solid #ECC452;
+    }
     img.categorias__imagenesVitrina {
         height: 195px;
         width: 140px;
         transition: all 2s;
         text-align: center;
+        border-radius: 2rem;
     }
     /* Transform */
     img.categorias__imagenesVitrina:hover {
@@ -303,7 +307,7 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         margin-left: 10px;
         margin-right: 10px;
     }
-    #imgInicio {
+    .imgInicio {
         animation-name: aparecer;
         animation-duration: 1s;
     }

@@ -137,11 +137,14 @@
     text-align: center; }
   article h3, article div.tituloVitrinaIndex .enlaceVitrina, div.tituloVitrinaIndex article .enlaceVitrina {
     margin-top: 7px; }
+  article img.categorias__imagenesVitrina {
+    border: 5px solid #ECC452; }
   img.categorias__imagenesVitrina {
     height: 195px;
     width: 140px;
     transition: all 2s;
-    text-align: center; }
+    text-align: center;
+    border-radius: 2rem; }
   /* Transform */
   img.categorias__imagenesVitrina:hover {
     transform: scale(1.22, 1.1); }
@@ -215,7 +218,7 @@
     overflow: hidden;
     margin-left: 10px;
     margin-right: 10px; }
-  #imgInicio {
+  .imgInicio {
     animation-name: aparecer;
     animation-duration: 1s; }
   /* FLEXBOX*/
