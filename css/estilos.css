@@ -11,6 +11,11 @@
   100% {
     opacity: 1; } }
 
+@keyframes bigger {
+  from { }
+  to {
+    transform: scale(1.2, 1.1); } }
+
 .reset {
   margin: 0;
   padding: 0; }
@@ -147,7 +152,9 @@
     border-radius: 2rem; }
   /* Transform */
   img.categorias__imagenesVitrina:hover {
-    transform: scale(1.22, 1.1); }
+    animation-name: bigger;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
   h3, div.tituloVitrinaIndex .enlaceVitrina {
     font-size: 20px;
     color: #000;
