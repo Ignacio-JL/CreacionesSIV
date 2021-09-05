@@ -76,6 +76,7 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     }
     .carousel{
         padding: 0;
+        margin:-10px -40px -10px -40px;
     }
     .carousel-inner{
         padding: 0;
@@ -194,18 +195,6 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         display: inline-block;
         margin: 10px 50px;
     }
-    div.tituloVitrinaIndex .enlaceVitrina{
-        @extend h3;
-        text-decoration: none;
-    }
-    div.tituloVitrinaIndex a.enlaceVitrina:hover{
-        color: #ECC452;
-    }
-    article.recomendados {
-        display: inline-block;
-        margin: 10px 45px;
-        text-align: center;
-    }
     article h3 {
         margin-top: 7px;
     }
@@ -213,8 +202,8 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         border: 5px solid #ECC452;
     }
     img.categorias__imagenesVitrina {
-        height: 195px;
-        width: 140px;
+        height: 305px;
+        width: 215px;
         transition: all 2s;
         text-align: center;
         border-radius: 2rem;
@@ -231,7 +220,7 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         text-align: center;
     }
     h4 {
-        @include titulos(22px, #C0392B);
+        font-weight: 600;
     }
     td ol,
     td ul {
@@ -339,16 +328,9 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    div#categoriasFlexbox,
-    div#recomendadosFlexbox {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        flex: 1;
-    }
     /* FLEXBOX */
     /* GRIDS - FLEXBOX */
-    #VitrinaIndexGrid{
+    .vitrinaIndexGrid{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -356,13 +338,13 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         grid-row-gap: 10px;
         justify-items: center;
     }
-    #VitrinaIndexGrid article a.enlaceVitrina{
+    .vitrinaIndexGrid article a.enlaceVitrina{
         @extend h3;
         display: block;
         text-decoration: none;
         margin-top: 20px;
     }
-    #VitrinaIndexGrid article a.enlaceVitrina:hover{
+    .vitrinaIndexGrid article a.enlaceVitrina:hover{
         color: #ECC452;
     }
     #tienda {
@@ -421,6 +403,9 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
 }
 
 @media (min-width: 375px){
+    .carousel{
+        margin: 0;
+    }
     .menu__item {
         font-size: 11px;
     }
@@ -448,7 +433,7 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     .mapFlexbox div {
         width: 40%;
     }
-    #VitrinaIndexGrid{
+    .vitrinaIndexGrid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
@@ -563,7 +548,7 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     th {
         font-size: 25px;
     }
-    #VitrinaIndexGrid{
+    .vitrinaIndexGrid{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
     }
@@ -574,9 +559,7 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         height: 255px;
         width: 190px;
     }
-    article.recomendados {
-        margin: 10px 1vw;
-    }
+    
 }
 
 @media (min-width: 1200px)
