@@ -245,9 +245,6 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         font-size: 16px;
         line-height: 1.6;
     }
-    .colorText {
-        color: #C70039;
-    }
     .iconFacebook {
         color: #1877f2;
         font-size: 20px;
@@ -351,6 +348,22 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     }
     /* FLEXBOX */
     /* GRIDS - FLEXBOX */
+    #VitrinaIndexGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+    #VitrinaIndexGrid article a.enlaceVitrina{
+        @extend h3;
+        display: block;
+        text-decoration: none;
+    }
+    #VitrinaIndexGrid article a.enlaceVitrina{
+        color: #ECC452;
+    }
     #tienda {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -433,6 +446,10 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     }
     .mapFlexbox div {
         width: 40%;
+    }
+    #VitrinaIndexGrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
     #tienda {
         grid-template-columns: repeat(3, 1fr);
@@ -544,6 +561,10 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
     }
     th {
         font-size: 25px;
+    }
+    #VitrinaIndexGrid{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
     }
     div article.categorias {
         margin: 10px 1vw;

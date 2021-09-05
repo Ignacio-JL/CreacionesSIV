@@ -140,7 +140,7 @@
     display: inline-block;
     margin: 10px 45px;
     text-align: center; }
-  article h3, article div.tituloVitrinaIndex .enlaceVitrina, div.tituloVitrinaIndex article .enlaceVitrina {
+  article h3, article div.tituloVitrinaIndex .enlaceVitrina, div.tituloVitrinaIndex article .enlaceVitrina, #VitrinaIndexGrid article a.enlaceVitrina {
     margin-top: 7px; }
   article img.categorias__imagenesVitrina {
     border: 5px solid #ECC452; }
@@ -155,7 +155,7 @@
     animation-name: bigger;
     animation-duration: 0.5s;
     animation-fill-mode: forwards; }
-  h3, div.tituloVitrinaIndex .enlaceVitrina {
+  h3, div.tituloVitrinaIndex .enlaceVitrina, #VitrinaIndexGrid article a.enlaceVitrina {
     font-size: 20px;
     color: #000;
     text-align: center; }
@@ -172,8 +172,6 @@
   p {
     font-size: 16px;
     line-height: 1.6; }
-  .colorText {
-    color: #C70039; }
   .iconFacebook {
     color: #1877f2;
     font-size: 20px; }
@@ -254,6 +252,18 @@
     flex: 1; }
   /* FLEXBOX */
   /* GRIDS - FLEXBOX */
+  #VitrinaIndexGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    justify-items: center; }
+  #VitrinaIndexGrid article a.enlaceVitrina {
+    display: block;
+    text-decoration: none; }
+  #VitrinaIndexGrid article a.enlaceVitrina {
+    color: #ECC452; }
   #tienda {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -316,6 +326,9 @@
     width: 40%; }
   .mapFlexbox div {
     width: 40%; }
+  #VitrinaIndexGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
   #tienda {
     grid-template-columns: repeat(3, 1fr); }
   ul.dropdown-menu {
@@ -328,7 +341,7 @@
   h1,
   h2 {
     font-size: 50px; }
-  h3, div.tituloVitrinaIndex .enlaceVitrina {
+  h3, div.tituloVitrinaIndex .enlaceVitrina, #VitrinaIndexGrid article a.enlaceVitrina {
     font-size: 25px; }
   .iconFacebook {
     font-size: 50px; }
@@ -393,6 +406,9 @@
     margin: auto 10px; }
   th {
     font-size: 25px; }
+  #VitrinaIndexGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr; }
   div article.categorias {
     margin: 10px 1vw; }
   img.categorias__imagenesVitrina {
