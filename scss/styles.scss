@@ -360,8 +360,9 @@ $tituloVitrina:( Index: black, Tienda: cornflowerblue);
         @extend h3;
         display: block;
         text-decoration: none;
+        margin-top: 20px;
     }
-    #VitrinaIndexGrid article a.enlaceVitrina{
+    #VitrinaIndexGrid article a.enlaceVitrina:hover{
         color: #ECC452;
     }
     #tienda {

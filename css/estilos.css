@@ -261,8 +261,9 @@
     justify-items: center; }
   #VitrinaIndexGrid article a.enlaceVitrina {
     display: block;
-    text-decoration: none; }
-  #VitrinaIndexGrid article a.enlaceVitrina {
+    text-decoration: none;
+    margin-top: 20px; }
+  #VitrinaIndexGrid article a.enlaceVitrina:hover {
     color: #ECC452; }
   #tienda {
     display: grid;
