@@ -41,8 +41,10 @@
     padding: 0; }
   .carousel {
     padding: 0;
-    margin: -10px -40px -10px -40px; }
+    margin-bottom: -15px; }
   .carousel-inner {
+    padding: 0; }
+  .carousel-item {
     padding: 0; }
   ol,
   ul {
@@ -220,12 +222,6 @@
     animation-name: aparecer;
     animation-duration: 1s; }
   /* FLEXBOX*/
-  #divImgInicio {
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex: 1; }
   #infoIndex {
     margin: 20px 10px; }
   #infoIndex #infoInicio {
@@ -309,8 +305,9 @@
   .carousel {
     padding: auto; }
   .carousel-inner {
-    padding-left: 13%;
-    padding-right: 13%; }
+    padding-top: 0;
+    padding-left: 7%;
+    padding-right: 7%; }
   .nosotrosFlexbox div {
     width: 40%; }
   .mapFlexbox div {
@@ -344,7 +341,7 @@
     margin: 9px; }
   .menu {
     height: 60px;
-    margin-bottom: 10px; }
+    margin-bottom: 0px; }
   #imagenesInicio {
     border: 5px solid #FFFFFF;
     margin-left: 100px;
@@ -387,6 +384,9 @@
     width: 215px; } }
 
 @media (min-width: 1024px) {
+  .carousel-inner {
+    padding-left: 15%;
+    padding-right: 15%; }
   .menu__item {
     list-style: none;
     display: inline-block; }

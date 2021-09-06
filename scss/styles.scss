@@ -76,9 +76,12 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     .carousel{
         padding: 0;
-        margin:-10px -40px -10px -40px;
+        margin-bottom: -15px;
     }
     .carousel-inner{
+        padding: 0;
+    }
+    .carousel-item{
         padding: 0;
     }
     ol,
@@ -309,13 +312,6 @@ $tituloVitrina:( Index: black, Tienda: black);
         animation-duration: 1s;
     }
     /* FLEXBOX*/
-    #divImgInicio {
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex: 1;
-    }
     #infoIndex {
         margin: 20px 10px;
     }
@@ -423,8 +419,9 @@ $tituloVitrina:( Index: black, Tienda: black);
         padding: auto;
     }
     .carousel-inner{
-        padding-left: 13%;
-        padding-right: 13%;
+        padding-top: 0;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 
     .nosotrosFlexbox div {
@@ -474,7 +471,7 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     .menu {
         height: 60px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     #imagenesInicio {
         border: 5px solid #FFFFFF;
@@ -535,7 +532,11 @@ $tituloVitrina:( Index: black, Tienda: black);
 /*TABLET VERTICAL*/
 
 {
-    
+    .carousel-inner{
+        
+        padding-left: 15%;
+        padding-right: 15%;
+    }
     .menu__item {
         list-style: none;
         
