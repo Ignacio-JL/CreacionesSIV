@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +58,10 @@
   /* HEADER-LOGO */
   header {
     padding-top: 3.5vh;
-    background-color: #121212; }
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 2; }
   header div {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -142,12 +144,10 @@
   article img.categorias__imagenesVitrina {
     border: 5px solid #ECC452; }
   img.categorias__imagenesVitrina {
-    height: 305px;
-    width: 215px;
-    transition: all 2s;
+    height: 275px;
+    width: 205px;
     text-align: center;
-    border-radius: 2rem; }
-  /* Transform */
+    border-radius: 1.5rem; }
   img.categorias__imagenesVitrina:hover {
     animation-name: bigger;
     animation-duration: 0.5s;
@@ -168,13 +168,33 @@
   p {
     font-size: 16px;
     line-height: 1.6; }
+  .iconWhatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #1BD741;
+    color: #FFF;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    z-index: 10;
+    padding-top: 5px; }
+  .iconWhatsapp:hover {
+    text-decoration: none;
+    color: #FFF; }
   .iconFacebook {
     color: #1877f2;
     font-size: 20px; }
+  .iconFacebook:hover {
+    color: #1877f2; }
   .iconInstagram {
     font-size: 20px; }
   .iconLinkedIn {
     font-size: 20px;
+    color: #0E76A8; }
+  .iconLinkedIn:hover {
     color: #0E76A8; }
   .fa-instagram {
     color: transparent;
@@ -257,13 +277,11 @@
     justify-items: center; }
   section#tienda .productosTienda {
     /*article*/
-    /*Le doy un tamaño para que tenga un efecto*/
     width: 80%;
     height: 250px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #FFFFFF;
-    border-radius: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,8 +291,11 @@
     font-size: 14px; }
   /* GRIDS */
   article.productosTienda img {
-    border-radius: 35px;
     height: 150px; }
+  article.productosTienda img:hover {
+    animation-name: bigger;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
   #tienda article ul {
     list-style-type: none; }
   #infoNosotros {
@@ -365,10 +386,9 @@
   #formContacto {
     font-size: 20px; }
   #tienda {
-    grid-row-gap: 100px;
-    grid-column-gap: 50px; }
+    margin-top: 50px;
+    grid-row-gap: 100px; }
   section#tienda .productosTienda {
-    border-radius: 40px;
     justify-content: flex-end;
     font-size: auto; }
   article.productosTienda img {
