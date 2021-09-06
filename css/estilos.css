@@ -56,7 +56,8 @@
     font-weight: 700; }
   /* HEADER-LOGO */
   header {
-    margin-top: 3.5vh; }
+    padding-top: 3.5vh;
+    background-color: #121212; }
   header div {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -72,15 +73,14 @@
     align-self: center; }
   header div h1 {
     margin: auto 5vw;
-    align-content: center; }
+    color: #FFF;
+    align-content: center;
+    font-weight: 600; }
   /* HEADER-LOGO */
   footer div {
     padding-bottom: 50px; }
   div {
     padding: 20px 50px; }
-  .sizeTextInput {
-    height: 30px;
-    width: 100%; }
   .sizeTextArea {
     width: 90%;
     height: 200px; }
@@ -91,7 +91,9 @@
   .tituloVitrinaIndex {
     color: black; }
   .tituloVitrinaTienda {
-    color: cornflowerblue; }
+    color: black; }
+  .tituloVitrinaTienda {
+    font-weight: 600; }
   h1,
   h2 {
     font-size: 30px;
@@ -100,7 +102,7 @@
     letter-spacing: 1px;
     word-spacing: 15px;
     font-weight: 700;
-    margin: 5vh 25vw; }
+    margin: 3vh 15vw; }
   h1 {
     font-family: 'Bellefair', serif;
     font-weight: 400;
@@ -182,8 +184,7 @@
     height: 40px;
     padding-top: 5px;
     margin-top: 10px;
-    margin-bottom: 0px;
-    background-color: #000000; }
+    margin-bottom: 0px; }
   .menu__item {
     list-style: none;
     font-size: 10px;
@@ -280,22 +281,18 @@
     height: 150px; }
   #tienda article ul {
     list-style-type: none; }
-  #formContacto {
-    font-size: 15px;
-    padding: 0px 20px;
-    border-top: 5px double #426e6e;
-    border-bottom: 5px double #426e6e; }
   #infoNosotros {
     margin-left: 0%;
     margin-right: 0%; }
   #infoNosotros div p {
     padding-left: 10px; }
-  #formSeguimiento {
+  #formSeguimiento, #formContacto {
+    background-color: #000;
+    color: #FFF;
     font-size: 20px;
     margin-top: 60px;
     margin-bottom: 60px;
-    border-top: 5px double #426e6e;
-    border-bottom: 5px double #426e6e; } }
+    padding: 5%; } }
 
 @media (min-width: 375px) {
   .carousel {
@@ -306,6 +303,9 @@
     margin: 4px; } }
 
 @media (min-width: 768px) {
+  h1,
+  h2 {
+    margin: 5vh 25vw; }
   .carousel {
     padding: auto; }
   .carousel-inner {

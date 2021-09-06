@@ -55,22 +55,46 @@
 
     <main>
         <h2>SEGUIMIENTO</h2>
-        <section id="formSeguimiento">
-            <div>
-                <label for="dni">DNI</label>
-                <input class="sizeTextInput formSeguimiento__input" type="number" name="dni" id="dni" placeholder="Ingresa tu dni">
-
-                <label for="guia">Nro. Guia</label>
-                <input class="sizeTextInput formSeguimiento__input" type="number" name="guia" id="guia" placeholder="Ingresa el numero de guia de tu pedido">
-
-                <input type="submit" value="Buscar">
-            </div>
-        </section>
+        <div class="reset" id="formSeguimiento">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                    
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="dni" class="form-label">DNI</label>
+                    <input type="number" class="form-control" id="dni" placeholder="Ingrese su Dni" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="numGuia" class="form-label">Nro. Guía</label>
+                    <input type="number" class="form-control" id="numGuia" placeholder="Ingrese el número de guía de su pedido" required>
+                </div>
+                
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="acepted" required>
+                        <label class="form-check-label" for="acepted">
+                        Acepto los terminos y condiciones.
+                        </label>
+                        
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
 
         <section id="infoGarantia">
             <div>
                 <!--Informacion de envios-->
-                <h3 class="infoGarantia__title">Informacion de envios</h3>
+                <h4 class="infoGarantia__title textCenter">INFORMACIÓN DE ENVIOS</h4>
                 <p>
                     La salida del pedido estará sujeta al aviso y acreditación del importe depositado en la cuenta bancaria.
                 </p>
@@ -93,8 +117,8 @@
             <p>Suscribiendote seras de los primeros en enterarte de nuestras PROMOCIONES y productos nuevos. Además participas en increibles sorteos y descuentos para tus compras.
             </p>
             <form action="" method="">
-                <input type="email" name="correoPromo" class="sizeTextInput" placeholder="Ingresar tu correo para participar">
-                <button>Aceptar</button>
+                <input type="email" name="correoPromo" class="form-control promoForm__input" placeholder="Ingresar tu correo para participar">
+                <button class="btn btn-primary promoForm__Button">Aceptar</button>
             </form>
         </div>
     </main>

@@ -56,61 +56,66 @@
     </header>
 
     <main>
-
         <h2>CONTACTO</h2>
-        <section id="formContacto">
-            <div class="reset">
-                <form action="https://formspree.io/f/mnqlzrnn" method="POST">
-                    <fieldset>
-                        <legend>Formulario Contacto</legend>
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input class="sizeTextInput" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
-                        </div>
+        <div class="reset" id="formSeguimiento">
+            <form class="row g-3" form action="https://formspree.io/f/mnqlzrnn" method="POST">
+                
+                <div class="col-md-5">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                    
+                </div>
 
-                        <div>
-                            <label for="asunto">Asunto</label>
-                            <select name="asunto" id="asunto">
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Correo electronico</label>
+                    <input type="email" class="form-control" name="_replyto" id="email" placeholder="Ingrese correo electronico" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <div class="reset">
+                        <select name="asunto" class="form-select" id="asunto">
                             <option value="mayorista">Mayorista</option>
                             <option value="minorista">Minorista</option>
                             <option value="otros">Otros</option>
                         </select>
-                        </div>
-                        <div>
-                            <label for="email">Correo electronico</label>
-                            <input class="sizeTextInput" type="email" name="_replyto" id="email" placeholder="Ingresa tu correo electronico">
-                        </div>
+                    </div>
+                </div>
+                
 
-                        <div>
-                            <label for="mensaje">Mensaje</label>
-                            <br/>
-                            <textarea name="message" placeholder="Ingresa el mensaje" id="mensaje" class="sizeTextArea"></textarea>
-                        </div>
+                <div class="col-md-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control sizeTextArea" name="message" placeholder="Ingresa tu mensaje" id="mensaje"></textarea>
+                </div>
+                
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="acepted1" required>
+                        <label class="form-check-label" for="acepted1">
+                        Acepto los terminos y condiciones.
+                        </label>
+                        
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="acepted2" required>
+                        <label class="form-check-label" for="acepted2">
+                        Quiero recibir ofertas semanales
+                        </label>
+                        
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
 
-                        <div class="reset textCenter">
-                            <label for="hombre">Hombre</label>
-                            <input type="radio" name="genero" value="hombre" id="hombre">
-                            <label for="mujer">Mujer</label>
-                            <input type="radio" name="genero" value="mujer" id="mujer">
-
-                            <label for="aceptarNovedades">Quiero recibir novedades semanales</label>
-                            <input type="checkbox" name="aceptarNovedades" value="1" id="aceptarNovedades">
-                        </div>
-
-                        <div class="textCenter">
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar campos">
-                        </div>
-                    </fieldset>
-
-
-                </form>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <div>
+        <div class="reset">
             <h4 class="footer__title textCenter">INFORMACION DEL NEGOCIO</h4>
 
             <section class="redesFooter">
@@ -128,7 +133,7 @@
             
             <section class="mapFlexbox">
                 
-                <div>
+                <div class="reset">
                     <P>
                         Estamos ubicados en Bacacay 3474, Galería Las Chozas entre Emilio Lamarca y Concordia.
                     </P>
@@ -146,7 +151,7 @@
                     </P>
                     
                 </div>
-                <div>
+                <div class="reset">
                     <!--Ubicacion en mapa-->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9666655377846!2d-58.47965404909029!3d-34.63028266631548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9917ed5c58d%3A0xc84acd601fd2f389!2sBacacay%203474%2C%20C1407EDD%20CABA!5e0!3m2!1ses!2sar!4v1629320401920!5m2!1ses!2sar"  style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy"></iframe>
                 </div>                
