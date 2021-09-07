@@ -129,8 +129,18 @@ $tituloVitrina:( Index: black, Tienda: black);
         font-weight: 600;
     }
     /* HEADER-LOGO */
+    footer{
+        background-color: rgb(18, 18, 18);
+        color: #FFF;
+    }
+    footer .footer__title{
+        color: #FFF;
+    }
     footer div {
         padding-bottom: 50px;
+    }
+    footer .footerContact{
+        padding-top: 20px;
     }
     div {
         padding: 20px 50px;
@@ -412,12 +422,16 @@ $tituloVitrina:( Index: black, Tienda: black);
     #infoNosotros div p {
         padding-left: 10px;
     }
+    .bodyDark{
+        background-color: #000;
+        color: #FFF;
+    }
     #formSeguimiento,#formContacto {
         background-color: #000;
         color: #FFF;
         font-size: 20px;
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
         padding: 5%;
     }
 }
@@ -558,6 +572,9 @@ $tituloVitrina:( Index: black, Tienda: black);
 /*TABLET VERTICAL*/
 
 {
+    header {
+        padding-top: 1vh;
+    }
     .carousel-inner{
         
         padding-left: 15%;
@@ -591,5 +608,17 @@ $tituloVitrina:( Index: black, Tienda: black);
 
 @media (min-width: 1200px)
 /*PC ESCRITORIO*/
-
-{}
+{
+    header {
+        padding-top: 0;
+    }
+    #headerTitle{
+        height: 120px;
+    }
+}
+@media (min-width: 1440px)
+{
+    #headerTitle{
+        height: auto;
+    }
+}

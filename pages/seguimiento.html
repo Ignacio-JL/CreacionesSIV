@@ -8,6 +8,7 @@
     <meta name="keywords" content="Indumentaria, Mayorista, Ropa, Niños, Fabricantes, Textil">
     <meta name="description" content="Podes ver el estado de tu pedido las 24hs del día para garantizarte la mayor calidad y seguridad">
     <title>SIV | Seguimiento</title>
+    <link rel="icon" href="../img/iconlogo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Raleway:wght@100;300;700&family=Titillium+Web:wght@200;700;900&display=swap" rel="stylesheet">
@@ -55,72 +56,74 @@
 
     <main>
         <h2>SEGUIMIENTO</h2>
-        <div class="reset" id="formSeguimiento">
-            <form class="row g-3">
-                <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
-                    
-                </div>
-                <div class="col-md-6">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
-                </div>
-                
-                <div class="col-md-6">
-                    <label for="dni" class="form-label">DNI</label>
-                    <input type="number" class="form-control" id="dni" placeholder="Ingrese su Dni" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="numGuia" class="form-label">Nro. Guía</label>
-                    <input type="number" class="form-control" id="numGuia" placeholder="Ingrese el número de guía de su pedido" required>
-                </div>
-                
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="acepted" required>
-                        <label class="form-check-label" for="acepted">
-                        Acepto los terminos y condiciones.
-                        </label>
+        <section class="bodyDark">
+            <div class="reset" id="formSeguimiento">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
                         
                     </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Buscar</button>
-                </div>
-            </form>
-        </div>
+                    <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="dni" class="form-label">DNI</label>
+                        <input type="number" class="form-control" id="dni" placeholder="Ingrese su Dni" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="numGuia" class="form-label">Nro. Guía</label>
+                        <input type="number" class="form-control" id="numGuia" placeholder="Ingrese el número de guía de su pedido" required>
+                    </div>
+                    
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="acepted" required>
+                            <label class="form-check-label" for="acepted">
+                            Acepto los terminos y condiciones.
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Buscar</button>
+                    </div>
+                </form>
+            </div>
 
-        <section id="infoGarantia">
-            <div>
-                <!--Informacion de envios-->
-                <h4 class="infoGarantia__title textCenter">INFORMACIÓN DE ENVIOS</h4>
-                <p>
-                    La salida del pedido estará sujeta al aviso y acreditación del importe depositado en la cuenta bancaria.
+            <section id="infoGarantia">
+                <div>
+                    <!--Informacion de envios-->
+                    <h4 class="infoGarantia__title textCenter">INFORMACIÓN DE ENVIOS</h4>
+                    <p>
+                        La salida del pedido estará sujeta al aviso y acreditación del importe depositado en la cuenta bancaria.
+                    </p>
+                    <p>
+                        Su pedido será llevado por nuestro transporte hasta la empresa de transporte que usted haya elegido , acordando con la misma la entrega en su domicilio o en la oficina terminal más próxima a donde usted se encuentre.
+                    </p>
+                    <p>
+                        También puede retirarlo personalmente o enviar un comisionista que lo haga por usted, en ese caso, podrá abonar el importe en nuestro local.
+                    </p>
+                    <p>
+                        El pago del transporte estará a cargo del cliente.
+                    </p>
+                    <!--Sello de confianza-->
+                </div>
+            </section>
+
+            <div class="promoSub">
+                <h4 class="promoSub__title">Enterate de nuestras novedades semanalmente</h4>
+                <!--Introduccion de correo electronico-->
+                <p>Suscribiendote seras de los primeros en enterarte de nuestras PROMOCIONES y productos nuevos. Además participas en increibles sorteos y descuentos para tus compras.
                 </p>
-                <p>
-                    Su pedido será llevado por nuestro transporte hasta la empresa de transporte que usted haya elegido , acordando con la misma la entrega en su domicilio o en la oficina terminal más próxima a donde usted se encuentre.
-                </p>
-                <p>
-                    También puede retirarlo personalmente o enviar un comisionista que lo haga por usted, en ese caso, podrá abonar el importe en nuestro local.
-                </p>
-                <p>
-                    El pago del transporte estará a cargo del cliente.
-                </p>
-                <!--Sello de confianza-->
+                <form action="" method="">
+                    <input type="email" name="correoPromo" class="form-control promoForm__input" placeholder="Ingresar tu correo para participar">
+                    <button class="btn btn-primary promoForm__Button">Aceptar</button>
+                </form>
             </div>
         </section>
-
-        <div class="promoSub">
-            <h4 class="promoSub__title">Enterate de nuestras novedades semanalmente</h4>
-            <!--Introduccion de correo electronico-->
-            <p>Suscribiendote seras de los primeros en enterarte de nuestras PROMOCIONES y productos nuevos. Además participas en increibles sorteos y descuentos para tus compras.
-            </p>
-            <form action="" method="">
-                <input type="email" name="correoPromo" class="form-control promoForm__input" placeholder="Ingresar tu correo para participar">
-                <button class="btn btn-primary promoForm__Button">Aceptar</button>
-            </form>
-        </div>
     </main>
 
     <footer>
