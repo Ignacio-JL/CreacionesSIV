@@ -252,17 +252,16 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     .iconWhatsapp{
         position: fixed;
-        bottom: 25px;
-        right: 25px;
-        width: 60px;
-        height: 60px;
+        bottom: 60px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
         background-color: #1BD741;
         color: #FFF;
         border-radius: 50px;
         font-size: 30px;
         text-align: center;
         z-index: 10;
-        padding-top: 5px;
     }
     .iconWhatsapp:hover{
         text-decoration: none;
@@ -452,6 +451,14 @@ $tituloVitrina:( Index: black, Tienda: black);
 /*TABLET HORIZONTAL*/
 
 {
+    .iconWhatsapp{
+        
+        bottom: 60px;
+        right: 35px;
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+    }
     h1,h2{
         margin: 5vh 25vw;
     }
