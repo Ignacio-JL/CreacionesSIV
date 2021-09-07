@@ -113,7 +113,7 @@
     letter-spacing: 1px;
     word-spacing: 15px;
     font-weight: 700;
-    margin: 3vh 15vw; }
+    margin: 0.5vh 15vw; }
   h1 {
     font-family: 'Bellefair', serif;
     font-weight: 400;
@@ -316,7 +316,7 @@
     background-color: #000;
     color: #FFF;
     font-size: 20px;
-    margin-top: 60px;
+    margin-top: 0px;
     margin-bottom: 0px;
     padding: 5%; } }
 
@@ -335,9 +335,6 @@
     width: 80px;
     height: 80px;
     font-size: 50px; }
-  h1,
-  h2 {
-    margin: 5vh 25vw; }
   .carousel {
     padding: auto; }
   .carousel-inner {
