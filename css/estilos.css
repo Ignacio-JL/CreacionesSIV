@@ -39,7 +39,7 @@
     color: #000000;
     padding: 0; }
   .carousel-indicators [data-bs-target] {
-    margin-right: 13px;
+    margin-rigt: 13px;
     margin-left: 13px;
     width: 40px;
     height: 4px;
@@ -352,7 +352,13 @@
   h1 {
     font-size: 39px; }
   .menu__item {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .headerTitle {
+    margin-bottom: -4%;
+    margin-top: -1%; }
+  header div img {
+    height: 90%;
+    width: 110%; } }
 
 @media (min-width: 768px) {
   .headerTitle {
@@ -360,8 +366,8 @@
   header {
     padding-top: 1vh; }
   header div img {
-    height: 85%;
-    width: 100%; }
+    height: 90%;
+    width: 95%; }
   .iconWhatsapp {
     bottom: 60px;
     right: 35px;
@@ -451,6 +457,13 @@
     width: 215px; } }
 
 @media (min-width: 1024px) {
+  .headerTitle {
+    margin-bottom: -2%; }
+  header {
+    padding-top: 2%; }
+  header div img {
+    height: 80%;
+    width: 70%; }
   h1 {
     font-size: 60px; }
   .carousel-indicators [data-bs-target] {
@@ -485,17 +498,15 @@
     font-size: 24px; }
   .menu__item a {
     font-weight: 700;
-    margin: auto 28px; }
-  header {
-    padding-top: 0; }
-  .headerTitle {
-    margin-bottom: -4%; } }
+    margin: auto 28px; } }
 
 @media (min-width: 1440px) {
+  .headerTitle {
+    margin-bottom: -3.5%; }
+  header {
+    padding-top: 1%; }
   h1 {
     font-size: 60px; }
-  #headerTitle {
-    margin-bottom: -4%; }
   .menu__item {
     font-size: 30px; }
   .menu__item a {
