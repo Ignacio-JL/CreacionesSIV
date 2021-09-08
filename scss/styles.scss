@@ -79,6 +79,7 @@ $tituloVitrina:( Index: black, Tienda: black);
         margin-left: 13px;
         width: 40px;
         height: 4px;
+        background-color: #ECC452;
     }
     .carousel-control-prev, .carousel-control-next{
         opacity: 1;
@@ -115,8 +116,8 @@ $tituloVitrina:( Index: black, Tienda: black);
         font-weight: 700;
     }
     /* HEADER-LOGO */
-    #headerTitle{
-        margin-bottom: -3%;
+    .headerTitle{
+        margin-bottom: -2%;
     }
     header {
         padding-top: 1.5vh;
@@ -124,6 +125,7 @@ $tituloVitrina:( Index: black, Tienda: black);
         position: sticky;
         top: 0;
         z-index: 10;
+        
     }
     header div {
         display: grid;
@@ -310,13 +312,6 @@ $tituloVitrina:( Index: black, Tienda: black);
         background-clip: text;
         -webkit-background-clip: text;
     }
-    .menu {
-        height: 40px;
-        padding-top: 5px;;
-        margin-top: 10px;
-        margin-bottom: 0px;
-        // background-color: #000000;
-    }
     .menu__item {
         list-style: none;
         font-size: 10px;
@@ -480,7 +475,7 @@ $tituloVitrina:( Index: black, Tienda: black);
 }
 @media (min-width: 600px){
     h1{
-        font-size: 45px;
+        font-size: 39px;
     }
     .menu__item {
         font-size: 18px;
@@ -491,16 +486,17 @@ $tituloVitrina:( Index: black, Tienda: black);
 /*TABLET HORIZONTAL*/
 
 {
+    .headerTitle{
+        margin-bottom: -4%;
+    }
     header{
         padding-top: 1vh;
     }
     header div img{
-        height: 90%;
+        height: 85%;
         width: 100%;
     }
-    #headerTitle{
-        margin-bottom: -5%;
-    }
+    
     .iconWhatsapp{
         
         bottom: 60px;
@@ -570,10 +566,7 @@ $tituloVitrina:( Index: black, Tienda: black);
     nav ul .menu__item {
         margin: 9px;
     }
-    .menu {
-        height: 60px;
-        margin-bottom: 0px;
-    }
+    
     #imagenesInicio {
         border: 5px solid #FFFFFF;
         margin-left: 100px;
@@ -632,8 +625,15 @@ $tituloVitrina:( Index: black, Tienda: black);
 /*TABLET VERTICAL*/
 
 {
-    header {
-        padding-top: 1vh;
+    h1{
+        font-size: 60px;
+        
+    }
+    .carousel-indicators [data-bs-target]{
+        margin-right: 38px;
+        margin-left: 38px;
+        width: 60px;
+        height: 9px;
     }
     .carousel-inner{
         
@@ -681,6 +681,9 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     header {
         padding-top: 0;
+    }
+    .headerTitle{
+        margin-bottom: -4%;
     }
     
 }
