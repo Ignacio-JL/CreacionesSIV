@@ -187,7 +187,7 @@
     font-weight: 400;
     font-size: 18px; }
   p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6; }
   .iconWhatsapp {
     position: fixed;
@@ -325,12 +325,13 @@
   #formSeguimiento, #formContacto {
     background-color: #000;
     color: #FFF;
-    font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 5%; } }
 
 @media (min-width: 375px) {
+  p {
+    font-size: 15px; }
   .carousel {
     margin: 0; }
   .menu__item {
@@ -339,6 +340,8 @@
     margin: 4px; } }
 
 @media (min-width: 480px) {
+  p {
+    font-size: 16px; }
   h1 {
     font-size: 35px; }
   .menu__item {
@@ -436,7 +439,7 @@
     line-height: 2;
     font-weight: 700;
     font-size: 20px; }
-  #formContacto {
+  #formContacto, #formSeguimiento {
     font-size: 20px; }
   #tienda {
     margin-top: 50px;
