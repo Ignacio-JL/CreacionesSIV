@@ -122,7 +122,7 @@
   h1,
   h2 {
     font-size: 30px;
-    color: #03041A;
+    color: #fff;
     text-align: center;
     letter-spacing: 1px;
     word-spacing: 15px;
@@ -133,6 +133,7 @@
     font-weight: 400;
     text-transform: uppercase; }
   h2 {
+    color: #000;
     font-family: 'Titillium Web', sans-serif; }
   /* parrrafoDobleNosotros Similar a index */
   .nosotrosFlexbox div {
@@ -178,7 +179,8 @@
     color: #000;
     text-align: center; }
   h4 {
-    font-weight: 600; }
+    font-weight: 600;
+    color: #ECC452; }
   td ol,
   td ul {
     width: 150px;

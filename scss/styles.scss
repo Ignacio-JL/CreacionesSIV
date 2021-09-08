@@ -27,7 +27,7 @@
 }
 
 // variables
-$colorh1h2: #03041A;
+$colorh1: #fff;
 $activate: 1;
 //variable maps
 $tituloVitrina:( Index: black, Tienda: black);
@@ -186,7 +186,7 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     h1,
     h2 {
-        @include titulos(30px, $colorh1h2);
+        @include titulos(30px, $colorh1);
         text-align: center;
         letter-spacing: 1px;
         word-spacing: 15px;
@@ -199,6 +199,7 @@ $tituloVitrina:( Index: black, Tienda: black);
         text-transform: uppercase;
     }
     h2{
+        color: #000;
         font-family: 'Titillium Web', sans-serif;
     }
     /* parrrafoDobleNosotros Similar a index */
@@ -257,6 +258,7 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     h4 {
         font-weight: 600;
+        color: #ECC452;
     }
     td ol,
     td ul {
