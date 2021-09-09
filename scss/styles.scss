@@ -646,9 +646,6 @@ $tituloVitrina:( Index: black, Tienda: black);
         
     }
     
-    // header{
-    // }
-    
     header div img{
         height: 80%;
         width: 70%;
@@ -699,7 +696,7 @@ $tituloVitrina:( Index: black, Tienda: black);
 /*PC ESCRITORIO*/
 {
     h1{
-        font-size: 55px;
+        font-size: 50px;
     }
     .menu__item {
         font-size: 24px;
@@ -713,17 +710,19 @@ $tituloVitrina:( Index: black, Tienda: black);
 @media (min-width: 1440px)
 {
     .headerTitle{
-        margin-bottom: -3.5%;
+        margin-bottom: -4%;
+        
     }
-    
-    header{
-        padding-top: 1%;
+    header div img{
+        height: 75%;
+        width: 65%;
+        padding-top: 2%;
     }
     h1{
-        font-size: 60px;
+        font-size: 50px;
     }
     .menu__item {
-        font-size: 30px;
+        font-size: 25px;
     }
     .menu__item a {
         font-weight: 700;
