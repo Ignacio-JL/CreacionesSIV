@@ -463,12 +463,11 @@
 
 @media (min-width: 1024px) {
   .headerTitle {
-    margin-bottom: -2%; }
-  header {
-    padding-top: 2%; }
+    margin-bottom: -4%; }
   header div img {
     height: 80%;
-    width: 70%; }
+    width: 70%;
+    padding-top: 2%; }
   h1 {
     font-size: 60px; }
   .carousel-indicators [data-bs-target] {
