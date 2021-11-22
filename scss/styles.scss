@@ -235,7 +235,7 @@ $tituloVitrina:( Index: black, Tienda: black);
         margin: 10px 50px;
     }
     article h3 {
-        margin-top: 7px;
+        margin-top: 15px;
     }
     article img.categorias__imagenesVitrina{
         border: 5px solid #ECC452;
@@ -267,6 +267,9 @@ $tituloVitrina:( Index: black, Tienda: black);
         line-height: 1.5;
         font-weight: 400;
         font-size: 18px;
+    }
+    .textInfo{
+        font-size: 17px;
     }
     p {
         font-size: 14px;
@@ -396,10 +399,11 @@ $tituloVitrina:( Index: black, Tienda: black);
         color: #ECC452;
     }
     #tienda {
+        margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 20px;
+        // grid-column-gap: 20px;
         grid-row-gap: 10px;
         justify-items: center;
     }
@@ -407,8 +411,8 @@ $tituloVitrina:( Index: black, Tienda: black);
         /*article*/
         width: 80%;
         height: 250px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 35px;
+        margin-bottom: 95px;
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
@@ -420,7 +424,7 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     /* GRIDS */
     article.productosTienda img {
-        height: 150px;
+        height: 100%;
     }
     article.productosTienda img:hover{
         animation-name: bigger;
@@ -451,7 +455,7 @@ $tituloVitrina:( Index: black, Tienda: black);
 }
 
 @media (min-width: 375px){
-    p {
+    p, .textInfo {
         font-size: 15px;
     }
     .carousel{
@@ -465,6 +469,9 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
 }
 @media (min-width: 480px){
+    .textInfo{
+        font-size: 18px;
+    }
     p {
         font-size: 16px;
     }
@@ -501,6 +508,9 @@ $tituloVitrina:( Index: black, Tienda: black);
 /*TABLET HORIZONTAL*/
 
 {
+    .textInfo{
+        font-size: 20px;
+    }
     .headerTitle{
         margin-bottom: -4%;
     }
@@ -564,7 +574,7 @@ $tituloVitrina:( Index: black, Tienda: black);
         font-size: 50px;
     }
     h3 {
-        font-size: 25px;
+        font-size: 24px;
     }
     .iconFacebook {
         font-size: 50px;
@@ -613,15 +623,18 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     #tienda {
         margin-top: 50px;
-        grid-row-gap: 100px;
+        grid-row-gap: 40px;
     }
     section#tienda .productosTienda {
         justify-content: flex-end;
         font-size: auto;
+        width: 90%;
+        margin-top: 60px;
+        margin-bottom: auto;
     }
     article.productosTienda img {
-        height: 206px;
-        width: 170px;
+        height: 78%;
+        
     }
     p {
         font-size: 18px;
@@ -640,7 +653,9 @@ $tituloVitrina:( Index: black, Tienda: black);
 /*TABLET VERTICAL*/
 
 {
-    
+    .textInfo{
+        font-size: 22px;
+    }
     .headerTitle{
         margin-bottom: -4%;
         
@@ -689,12 +704,26 @@ $tituloVitrina:( Index: black, Tienda: black);
         height: 255px;
         width: 190px;
     }
+    section#tienda .productosTienda {
+        margin-top: 110px;
+        margin-bottom: 35px;
+    }
+    article.productosTienda img {
+        height: 100%;
+        margin-bottom: 10px;
+    }
     
 }
 
 @media (min-width: 1200px)
 /*PC ESCRITORIO*/
 {
+    section#tienda .productosTienda {
+        margin-top: 165px;
+    }
+    article.productosTienda img {
+        height: 120%;
+    }
     h1{
         font-size: 50px;
     }

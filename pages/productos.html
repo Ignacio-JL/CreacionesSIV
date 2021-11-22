@@ -56,140 +56,37 @@
 
     <main>
         <h2>PRODUCTOS</h2>
-
+        <div class="container reset">
+            <div class="row reset">
+                <div class="col-md-6">
+                    <form>
+                        <select class="form-select" style="width: auto; display: inline;" id="orden">
+                            <option value="original">Original</option>
+                            <option value="alf">Alfabeticamente</option>
+                        </select>
+                        <div class="reset">
+                            <button class="btn btn-primary textCenter options" id="ordenar" type="submit">Ordenar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <select class="form-select" style="width: auto; display: inline;" id="filtrar">
+                            <option value="menor">Menor a</option>
+                            <option value="mayor">Mayor a</option>
+                        </select>
+                        <input type="number" class="form-control" id="rango" style="width: 95px; display: inline;" placeholder="$" required>
+                        <div class="reset">
+                            <button class="btn btn-primary options" id="btnRango" type="submit">Filtrar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
         <section id="tienda">
-            <article class="productosTienda" id="niños">
-                <!--Imagen-->
-                <img src="../img/products/producto1.webp" alt="Campera Niño">
-                <h3 class="tituloVitrinaTienda">Campera niño</h3>
-                <ul>
-                    <li>$ 2400</li>
-                    <li>Poliamida</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda">
-                <!--Imagen-->
-                <img src="../img/products/producto5.webp" alt="Buzo Niño">
-                <h3 class="tituloVitrinaTienda">Buzo niño</h3>
-                <ul>
-                    <li>$ 800</li>
-                    <li>Frizza Invisible</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda" id="destacado3">
-                <!--Imagen-->
-                <img src="../img/products/producto7.webp" alt="Babucha Unisex">
-                <h3 class="tituloVitrinaTienda">Babucha unisex</h3>
-                <ul>
-                    <li>$ 900</li>
-                    <li>Frizza Invisible</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda" id="niñas">
-                <!--Imagen-->
-                <img src="../img/products/producto2.webp" alt="Campera Niña">
-                <h3 class="tituloVitrinaTienda">Parka niña</h3>
-                <ul>
-                    <li>$ 2200</li>
-                    <li>Coderito</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda" id="destacado4">
-                <!--Imagen-->
-                <img src="../img/products/producto6.webp" alt="Buzo Niña">
-                <h3 class="tituloVitrinaTienda">Buzo niña</h3>
-                <ul>
-                    <li>$ 800</li>
-                    <li>Corderito</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda">
-                <!--Imagen-->
-                <img src="../img/products/producto10.webp" alt="Babucha Niña">
-                <h3 class="tituloVitrinaTienda">Babucha niña</h3>
-                <ul>
-                    <li>$ 900</li>
-                    <li>Frizza</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda" id="bebes">
-                <!--Imagen-->
-                <img src="../img/products/producto3.webp" alt="Babucha Bebe">
-                <h3 class="tituloVitrinaTienda">Babucha bebé</h3>
-                <ul>
-                    <li>$ 550</li>
-                    <li>Frizza Invisible</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda">
-                <!--Imagen-->
-                <img src="../img/products/producto4.webp" alt="Conjunto Bebe">
-                <h3 class="tituloVitrinaTienda">Conjunto bebé</h3>
-                <ul>
-                    <li>$ 600</li>
-                    <li>Algodon</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda" id="destacado1">
-                <!--Imagen-->
-                <img src="../img/products/producto11.webp" alt="Jean Bebe">
-                <h3 class="tituloVitrinaTienda">Jean bebé</h3>
-                <ul>
-                    <li>$ 600</li>
-                    <li>Jean - Denim</li>
-                    <li>Talles 4 al 16</li>
-                </ul>
-            </article>
-
             
-            <article class="productosTienda" id="mas">
-                <!--Imagen-->
-                <img src="../img/products/producto8.webp" alt="Bufanda">
-                <h3 class="tituloVitrinaTienda">Bufanda</h3>
-                <ul>
-                    <li>$ 500</li>
-                    <li>Lanilla</li>
-                    <li>Talle único</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda" id="destacado2">
-                <!--Imagen-->
-                <img src="../img/products/producto12.webp" alt="Gorro">
-                <h3 class="tituloVitrinaTienda">Gorro</h3>
-                <ul>
-                    <li>$ 300</li>
-                    <li>Lanilla</li>
-                    <li>Talle único</li>
-                </ul>
-            </article>
-
-            <article class="productosTienda">
-                <!--Imagen-->
-                <img src="../img/products/producto9.webp" alt="Mochila Power">
-                <h3 class="tituloVitrinaTienda">Mochila Power</h3>
-                <ul>
-                    <li>$ 2000</li>
-                    <li>Cordura Nylon</li>
-                    <li>Talle único</li>
-                </ul>
-            </article>
         </section>
 
         <div class="promoSub container">
@@ -253,10 +150,12 @@
             <!--Ubicacion en mapa-->
         </div>
         <div class="reset">
-            <a href="https://api.whatsapp.com/send?phone=541170969187" target="_blank" class="iconWhatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5491138938910" target="_blank" class="iconWhatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

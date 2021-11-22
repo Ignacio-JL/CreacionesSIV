@@ -162,7 +162,7 @@
     display: inline-block;
     margin: 10px 50px; }
   article h3, .vitrinaIndexGrid article a.enlaceVitrina {
-    margin-top: 7px; }
+    margin-top: 15px; }
   article img.categorias__imagenesVitrina {
     border: 5px solid #ECC452; }
   img.categorias__imagenesVitrina {
@@ -188,6 +188,8 @@
     line-height: 1.5;
     font-weight: 400;
     font-size: 18px; }
+  .textInfo {
+    font-size: 17px; }
   p {
     font-size: 14px;
     line-height: 1.6; }
@@ -287,18 +289,18 @@
   .vitrinaIndexGrid article a.enlaceVitrina:hover {
     color: #ECC452; }
   #tienda {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
     grid-row-gap: 10px;
     justify-items: center; }
   section#tienda .productosTienda {
     /*article*/
     width: 80%;
     height: 250px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 95px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -309,7 +311,7 @@
     font-size: 14px; }
   /* GRIDS */
   article.productosTienda img {
-    height: 150px; }
+    height: 100%; }
   article.productosTienda img:hover {
     animation-name: bigger;
     animation-duration: 0.5s;
@@ -332,7 +334,7 @@
     padding: 5%; } }
 
 @media (min-width: 375px) {
-  p {
+  p, .textInfo {
     font-size: 15px; }
   .carousel {
     margin: 0; }
@@ -342,6 +344,8 @@
     margin: 4px; } }
 
 @media (min-width: 480px) {
+  .textInfo {
+    font-size: 18px; }
   p {
     font-size: 16px; }
   h1 {
@@ -366,6 +370,8 @@
     width: 110%; } }
 
 @media (min-width: 768px) {
+  .textInfo {
+    font-size: 20px; }
   .headerTitle {
     margin-bottom: -4%; }
   header {
@@ -410,7 +416,7 @@
   h2 {
     font-size: 50px; }
   h3, .vitrinaIndexGrid article a.enlaceVitrina {
-    font-size: 25px; }
+    font-size: 24px; }
   .iconFacebook {
     font-size: 50px; }
   .iconInstagram {
@@ -445,13 +451,15 @@
     font-size: 20px; }
   #tienda {
     margin-top: 50px;
-    grid-row-gap: 100px; }
+    grid-row-gap: 40px; }
   section#tienda .productosTienda {
     justify-content: flex-end;
-    font-size: auto; }
+    font-size: auto;
+    width: 90%;
+    margin-top: 60px;
+    margin-bottom: auto; }
   article.productosTienda img {
-    height: 206px;
-    width: 170px; }
+    height: 78%; }
   p {
     font-size: 18px; }
   #infoNosotros {
@@ -462,6 +470,8 @@
     width: 215px; } }
 
 @media (min-width: 1024px) {
+  .textInfo {
+    font-size: 22px; }
   .headerTitle {
     margin-bottom: -4%; }
   header div img {
@@ -493,9 +503,19 @@
     margin: 10px 1vw; }
   img.categorias__imagenesVitrina {
     height: 255px;
-    width: 190px; } }
+    width: 190px; }
+  section#tienda .productosTienda {
+    margin-top: 110px;
+    margin-bottom: 35px; }
+  article.productosTienda img {
+    height: 100%;
+    margin-bottom: 10px; } }
 
 @media (min-width: 1200px) {
+  section#tienda .productosTienda {
+    margin-top: 165px; }
+  article.productosTienda img {
+    height: 120%; }
   h1 {
     font-size: 50px; }
   .menu__item {
