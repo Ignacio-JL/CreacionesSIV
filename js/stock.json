@@ -2,8 +2,8 @@
     {
         "id": 1,
         "name": "Short Camuflado",
-        "price": 349,
         "material": "Rustico",
+        "price": 349,
         "sizeMin": 6,
         "sizeMax": 16,
         "imgUrl": "../img/products/ShortCamuf.png"
@@ -11,8 +11,8 @@
     {
         "id": 2,
         "name": "Short Combinado",
-        "price": 299,
         "material": "Rustico",
+        "price": 299,
         "sizeMin": 6,
         "sizeMax": 16,
         "imgUrl": "../img/products/ShortNiño.png"
@@ -20,8 +20,8 @@
     {
         "id": 3,
         "name": "Remera Estampada",
-        "price": 309,
         "material": "Jersey Estampado",
+        "price": 309,
         "sizeMin": 4,
         "sizeMax": 16,
         "imgUrl": "../img/products/Remera2.png"
@@ -29,8 +29,8 @@
     {
         "id": 4,
         "name": "Buzo Niño",
-        "price": 529,
         "material": "Rustico c/Lanilla",
+        "price": 529,
         "sizeMin": 4,
         "sizeMax": 16,
         "imgUrl": "../img/products/BuzoNiño.png"
@@ -38,17 +38,17 @@
     {
         "id": 5,
         "name": "Campera Niño",
-        "price": 589,
         "material": "Rustico c/Lanilla",
+        "price": 589,
         "sizeMin": 4,
         "sizeMax": 16,
-        "imgUrl": "../img/products/"
+        "imgUrl": "../img/products/CamperaNiño.png"
     },
     {
         "id": 6,
         "name": "Short Nena",
-        "price": 269,
         "material": "Fibrana Poplin",
+        "price": 269,
         "sizeMin": 4,
         "sizeMax": 16,
         "imgUrl": "../img/products/ShortNena.png"
@@ -56,8 +56,8 @@
     {
         "id": 7,
         "name": "Short Camuflado",
-        "price": 449,
         "material": "Fibrana Poplin",
+        "price": 449,
         "sizeMin": 6,
         "sizeMax": 16,
         "imgUrl": "../img/products/PantNena.png"
@@ -65,8 +65,8 @@
     {
         "id": 8,
         "name": "Chomba Bebe",
-        "price": 299,
         "material": "Jersey Algodon",
+        "price": 299,
         "sizeMin": 1,
         "sizeMax": 5,
         "imgUrl": "../img/products/ChombaBebe.png"
@@ -74,8 +74,8 @@
     {
         "id": 9,
         "name": "Short Bebe",
-        "price": 249,
         "material": "Rustico",
+        "price": 249,
         "sizeMin": 2,
         "sizeMax": 6,
         "imgUrl": "../img/products/ShortNbb.png"

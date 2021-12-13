@@ -1,3 +1,4 @@
+const url = "/js/stock.json";
 
 
 class Producto{
@@ -12,43 +13,46 @@ class Producto{
     }
     
 }
-const productos = [];
 
-function cargaManualProductos(){
-    
-        productos.push(new Producto(1, "Short Camuflado", "Rustico", 349, "../img/products/ShortCamuf.png", 6, 16));
-        productos.push(new Producto(2, "Short Combinado", "Rustico", 299, "../img/products/ShortNiño.png", 6, 16));
-        productos.push(new Producto(3, "Remera Estampada", "Jersey Estampado", 309, "../img/products/Remera2.png", 4, 16));
-        productos.push(new Producto(4, "Buzo Niño", "Rustico c/Lanilla", 529, "../img/products/BuzoNiño.png", 4, 16));
-        productos.push(new Producto(5, "Campera Niño", "Rustico c/Lanilla", 589, "../img/products/CamperaNiño.png", 4, 16));
-        productos.push(new Producto(6, "Short Nena", "Fibrana Poplin", 269, "../img/products/ShortNena.png", 4, 16));
-        productos.push(new Producto(7, "Babucha Nena", "Fibrana Poplin", 449, "../img/products/PantNena.png", 4, 16));
-        productos.push(new Producto(8, "Chomba Bebe", "Jersey Algodon", 299, "../img/products/ChombaBebe.png", 2, 5));
-        productos.push(new Producto(9, "Short Bebe", "Rustico", 249, "../img/products/ShortNbb.png", 2, 6));
-        sessionStorage.setItem("Productos", JSON.stringify(productos));
-    
-}
+let productos = [];
 
 function mostrarProductos(lista){
-    $('#tienda').html(''); //Evita recargar nuevamente la lista cuando se llame a eventos ordenar y filtrar
-    let nodo = '';
-    for(prod of lista){
-        
-        nodo +=    `<article class="productosTienda" id="niños">
-                    <img src="${prod.src}" alt="${prod.nombre}">
-                    <h3 class="tituloVitrinaTienda">${prod.nombre}</h3>
-                    <ul class="textInfo">
-                        <li>$ ${prod.precio}</li>
-                        <li>${prod.material}</li>
-                        <li>Talles ${prod.tMin} al ${prod.tMax}</li>
-                    </ul>
-                    </article>`;
-        
-    }
-//jQuery
-    $('#tienda').append(nodo);
-    
+
+        $('#tienda').html(''); //Evita recargar nuevamente la lista cuando se llame a eventos ordenar y filtrar
+        let nodo = '';
+        for(prod of lista){
+            
+            nodo +=    `<article class="productosTienda" id="niños">
+                        <img src="${prod.src}" alt="${prod.nombre}">
+                        <h3 class="tituloVitrinaTienda">${prod.nombre}</h3>
+                        <ul class="textInfo">
+                            <li>$ ${prod.precio}</li>
+                            <li>${prod.material}</li>
+                            <li>Talles ${prod.tMin} al ${prod.tMax}</li>
+                        </ul>
+                        </article>`;
+            
+        }
+
+        $('#tienda').append(nodo);
+        sessionStorage.setItem("Productos", JSON.stringify(productos));
+
 }
+
+
+
+const cargarArray = () => {
+    fetch(url)
+        .then((response) => response.json())
+        .then((result) => {
+            result.forEach(prod => {
+                productos.push(new Producto(prod.id, prod.name, prod.material, prod.price, prod.imgUrl, prod.sizeMin, prod.sizeMax));
+            });
+            mostrarProductos(productos);
+        })
+        .catch((error) => console.log(error));
+}
+
 
 const ordenarArrayPorNombre = () =>{productos.sort((a, b) =>{
     if(a.nombre > b.nombre){
@@ -63,8 +67,7 @@ const ordenarArrayPorNombre = () =>{productos.sort((a, b) =>{
 
 
 //Inicio
-cargaManualProductos();
-mostrarProductos(productos);
+cargarArray();
 
 
 $('#ordenar').on("click", function (e){
