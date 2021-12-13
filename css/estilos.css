@@ -321,8 +321,28 @@
   #infoNosotros {
     margin-left: 0%;
     margin-right: 0%; }
-  #infoNosotros div p {
-    padding-left: 10px; }
+    #infoNosotros div p {
+      padding-left: 10px; }
+    #infoNosotros .faq div {
+      padding: 0; }
+    #infoNosotros .faq p {
+      display: none; }
+    #infoNosotros .faq .faq--contenido__question {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 1fr; }
+      #infoNosotros .faq .faq--contenido__question .question--title h4 {
+        padding-left: 16px;
+        line-height: 1.8rem; }
+      #infoNosotros .faq .faq--contenido__question .question--arrow {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center; }
+        #infoNosotros .faq .faq--contenido__question .question--arrow button {
+          border: none;
+          background-color: #000; }
+          #infoNosotros .faq .faq--contenido__question .question--arrow button .fa-chevron-down, #infoNosotros .faq .faq--contenido__question .question--arrow button .fa-chevron-up {
+            color: #ECC452; }
   .bodyDark {
     background-color: #000;
     color: #FFF; }

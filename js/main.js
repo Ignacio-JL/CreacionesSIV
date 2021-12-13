@@ -1,3 +1,5 @@
+
+
 class Producto{
     constructor(id, nombre, material, precio, src, tMin, tMax){
         this.id = id;
@@ -8,9 +10,7 @@ class Producto{
         this.tMin = tMin;
         this.tMax = tMax;
     }
-    mostrarPrecio = () =>{
-        alert("el precio de este producto es: " + this.precio);
-    }
+    
 }
 const productos = [];
 
@@ -105,4 +105,59 @@ $('#btnRango').on("click", (e) =>{
 $(".options").on('click', function(){
     $(this).css('background-color','rgb(18, 18, 18)').slideUp().delay(100).slideDown();
     
+});
+
+//AJAX
+const URL = 'http://hp-api.herokuapp.com/api/characters';
+$('.btnHP').on('click', function(){
+    $.get(URL, function(resp, status){
+        if(status == 'success'){
+            let personajes = resp;
+            for(const personaje of personajes){
+                $('#listHP').append(`<li>${personaje.name}</li>`);
+            }
+        }
+    })
+});
+
+$('.notHP').on('click', function(){
+    $('#listHP').html('');
+});
+
+//FAQ
+function changeArrow(btnIcon){
+    if(btnIcon.children().hasClass("fa-chevron-down")){
+        btnIcon.children().removeClass("fa-chevron-down");
+        btnIcon.children().addClass("fa-chevron-up");
+    }
+    else{
+        btnIcon.children().removeClass("fa-chevron-up");
+        btnIcon.children().addClass("fa-chevron-down");
+    }
+}
+
+
+$('#arrow1').on('click', function (){
+    $('#faq1').toggle(200);
+    changeArrow($(this));
+});
+
+$('#arrow2').on('click', function (){
+    $('#faq2').toggle(200);
+    changeArrow($(this));
+});
+
+$('#arrow3').on('click', function (){
+    $('#faq3').toggle(200);
+    changeArrow($(this));
+});
+
+$('#arrow4').on('click', function (){
+    $('#faq4').toggle(200);
+    changeArrow($(this));
+});
+
+$('#arrow5').on('click', function (){
+    $('#faq5').toggle(200);
+    changeArrow($(this));
 });

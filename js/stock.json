@@ -1,0 +1,84 @@
+[
+    {
+        "id": 1,
+        "name": "Short Camuflado",
+        "price": 349,
+        "material": "Rustico",
+        "sizeMin": 6,
+        "sizeMax": 16,
+        "imgUrl": "../img/products/ShortCamuf.png"
+    },
+    {
+        "id": 2,
+        "name": "Short Combinado",
+        "price": 299,
+        "material": "Rustico",
+        "sizeMin": 6,
+        "sizeMax": 16,
+        "imgUrl": "../img/products/ShortNiño.png"
+    },
+    {
+        "id": 3,
+        "name": "Remera Estampada",
+        "price": 309,
+        "material": "Jersey Estampado",
+        "sizeMin": 4,
+        "sizeMax": 16,
+        "imgUrl": "../img/products/Remera2.png"
+    },
+    {
+        "id": 4,
+        "name": "Buzo Niño",
+        "price": 529,
+        "material": "Rustico c/Lanilla",
+        "sizeMin": 4,
+        "sizeMax": 16,
+        "imgUrl": "../img/products/BuzoNiño.png"
+    },
+    {
+        "id": 5,
+        "name": "Campera Niño",
+        "price": 589,
+        "material": "Rustico c/Lanilla",
+        "sizeMin": 4,
+        "sizeMax": 16,
+        "imgUrl": "../img/products/"
+    },
+    {
+        "id": 6,
+        "name": "Short Nena",
+        "price": 269,
+        "material": "Fibrana Poplin",
+        "sizeMin": 4,
+        "sizeMax": 16,
+        "imgUrl": "../img/products/ShortNena.png"
+    },
+    {
+        "id": 7,
+        "name": "Short Camuflado",
+        "price": 449,
+        "material": "Fibrana Poplin",
+        "sizeMin": 6,
+        "sizeMax": 16,
+        "imgUrl": "../img/products/PantNena.png"
+    },
+    {
+        "id": 8,
+        "name": "Chomba Bebe",
+        "price": 299,
+        "material": "Jersey Algodon",
+        "sizeMin": 1,
+        "sizeMax": 5,
+        "imgUrl": "../img/products/ChombaBebe.png"
+    },
+    {
+        "id": 9,
+        "name": "Short Bebe",
+        "price": 249,
+        "material": "Rustico",
+        "sizeMin": 2,
+        "sizeMax": 6,
+        "imgUrl": "../img/products/ShortNbb.png"
+    }
+    
+]

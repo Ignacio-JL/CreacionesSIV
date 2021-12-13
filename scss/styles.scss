@@ -437,9 +437,42 @@ $tituloVitrina:( Index: black, Tienda: black);
     #infoNosotros {
         margin-left: 0%;
         margin-right: 0%;
-    }
-    #infoNosotros div p {
-        padding-left: 10px;
+        div p{
+            padding-left: 10px;
+        }
+        .faq{
+            div{
+                padding: 0;
+            }
+            p{
+                display: none;
+            }
+            .faq--contenido__question{
+                display: grid;
+                grid-template-columns: 80% 20%;
+                grid-template-rows: 1fr;
+                .question--title{
+                    h4{
+                        padding-left: 16px;
+                        line-height: 1.8rem;						
+                    }
+                }
+                .question--arrow{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    button{
+                        border: none;
+                        background-color: #000;
+                        .fa-chevron-down, .fa-chevron-up{
+                            color: #ECC452;
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
     }
     .bodyDark{
         background-color: #000;
