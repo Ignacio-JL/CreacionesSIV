@@ -1,6 +1,3 @@
-const url = "/js/stock.json";
-
-
 class Producto{
     constructor(id, nombre, material, precio, src, tMin, tMax){
         this.id = id;
@@ -17,7 +14,6 @@ class Producto{
 let productos = [];
 
 function mostrarProductos(lista){
-
         $('#tienda').html(''); //Evita recargar nuevamente la lista cuando se llame a eventos ordenar y filtrar
         let nodo = '';
         for(prod of lista){
@@ -39,8 +35,8 @@ function mostrarProductos(lista){
 
 }
 
-
-
+//AJAX
+const url = "/js/stock.json";
 const cargarArray = () => {
     fetch(url)
         .then((response) => response.json())
@@ -48,10 +44,25 @@ const cargarArray = () => {
             result.forEach(prod => {
                 productos.push(new Producto(prod.id, prod.name, prod.material, prod.price, prod.imgUrl, prod.sizeMin, prod.sizeMax));
             });
-            mostrarProductos(productos);
+            
         })
         .catch((error) => console.log(error));
 }
+cargarArray();
+const promiseProductos = new Promise((resolve, reject) => {
+    setTimeout(() =>{
+        resolve(productos);
+    },400);
+    setTimeout(() => {
+        reject("error de promesa")
+    }, 1000);
+});
+
+promiseProductos
+    .then(response => mostrarProductos(response))
+    .catch( error => console.log(error));
+
+
 
 
 const ordenarArrayPorNombre = () =>{productos.sort((a, b) =>{
@@ -66,8 +77,7 @@ const ordenarArrayPorNombre = () =>{productos.sort((a, b) =>{
 
 
 
-//Inicio
-cargarArray();
+
 
 
 $('#ordenar').on("click", function (e){
