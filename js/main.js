@@ -1,5 +1,5 @@
 class Producto{
-    constructor(id, nombre, material, precio, src, tMin, tMax){
+    constructor(id, nombre, material, precio, src, tMin, tMax, tTotal){
         this.id = id;
         this.nombre = nombre;
         this.material = material;
@@ -7,6 +7,7 @@ class Producto{
         this.src = src;
         this.tMin = tMin;
         this.tMax = tMax;
+        this.tTotal = tTotal;
     }
     
 }
@@ -26,6 +27,9 @@ function mostrarProductos(lista){
                             <li>${prod.material}</li>
                             <li>Talles ${prod.tMin} al ${prod.tMax}</li>
                         </ul>
+                        <div class="reset">
+                            <span class="textInfo">Pack $${prod.tTotal * prod.precio}</span><button class="btn btn-primary" id="addCarrito" type="submit">Agregar al carrito</button>
+                        </div>
                         </article>`;
             
         }
@@ -42,13 +46,12 @@ const cargarArray = () => {
         .then((response) => response.json())
         .then((result) => {
             result.forEach(prod => {
-                productos.push(new Producto(prod.id, prod.name, prod.material, prod.price, prod.imgUrl, prod.sizeMin, prod.sizeMax));
+                productos.push(new Producto(prod.id, prod.name, prod.material, prod.price, prod.imgUrl, prod.sizeMin, prod.sizeMax, prod.sizeTotal));
             });
             
         })
         .catch((error) => console.log(error));
 }
-cargarArray();
 const promiseProductos = new Promise((resolve, reject) => {
     setTimeout(() =>{
         resolve(productos);
@@ -58,6 +61,9 @@ const promiseProductos = new Promise((resolve, reject) => {
     }, 1000);
 });
 
+
+
+cargarArray();
 promiseProductos
     .then(response => mostrarProductos(response))
     .catch( error => console.log(error));
@@ -74,10 +80,6 @@ const ordenarArrayPorNombre = () =>{productos.sort((a, b) =>{
     }
     return 0;
 });}
-
-
-
-
 
 
 $('#ordenar').on("click", function (e){
@@ -118,23 +120,6 @@ $('#btnRango').on("click", (e) =>{
 $(".options").on('click', function(){
     $(this).css('background-color','rgb(18, 18, 18)').slideUp().delay(100).slideDown();
     
-});
-
-//AJAX
-const URL = 'http://hp-api.herokuapp.com/api/characters';
-$('.btnHP').on('click', function(){
-    $.get(URL, function(resp, status){
-        if(status == 'success'){
-            let personajes = resp;
-            for(const personaje of personajes){
-                $('#listHP').append(`<li>${personaje.name}</li>`);
-            }
-        }
-    })
-});
-
-$('.notHP').on('click', function(){
-    $('#listHP').html('');
 });
 
 //FAQ

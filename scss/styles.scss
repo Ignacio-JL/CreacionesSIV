@@ -46,6 +46,7 @@ $tituloVitrina:( Index: black, Tienda: black);
 }
 
 @media (min-width: 320px) {
+    
     // Retoque bootstrap
     .nav-link {
         padding: 0;
@@ -400,17 +401,19 @@ $tituloVitrina:( Index: black, Tienda: black);
     }
     #tienda {
         margin-top: 20px;
+        margin-bottom: 40px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: auto;
         // grid-column-gap: 20px;
-        grid-row-gap: 10px;
+        grid-row-gap: 50px;
         justify-items: center;
     }
     section#tienda .productosTienda {
         /*article*/
-        width: 80%;
-        height: 250px;
+        
+        height: 210px;
         margin-top: 35px;
         margin-bottom: 95px;
         background-color: #FFFFFF;
@@ -418,13 +421,20 @@ $tituloVitrina:( Index: black, Tienda: black);
         flex-direction: column;
         align-items: center;
         /*Centra horizontalmente, caso columna*/
-        justify-content: center;
+        // justify-content: center;
         /*verticalmente, caso columna*/
         font-size: 14px;
+        div{
+            text-align: center;
+            button{
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+        }
     }
     /* GRIDS */
     article.productosTienda img {
-        height: 100%;
+        height: 90%;
     }
     article.productosTienda img:hover{
         animation-name: bigger;
@@ -488,6 +498,9 @@ $tituloVitrina:( Index: black, Tienda: black);
 }
 
 @media (min-width: 375px){
+    article.productosTienda img {
+        height: 100%;
+    }
     p, .textInfo {
         font-size: 15px;
     }
@@ -655,8 +668,8 @@ $tituloVitrina:( Index: black, Tienda: black);
         font-size: 20px;
     }
     #tienda {
-        margin-top: 50px;
-        grid-row-gap: 40px;
+        margin-top: 115px;
+        grid-row-gap: 125px;
     }
     section#tienda .productosTienda {
         justify-content: flex-end;
@@ -664,6 +677,12 @@ $tituloVitrina:( Index: black, Tienda: black);
         width: 90%;
         margin-top: 60px;
         margin-bottom: auto;
+        div{
+            button{
+                margin-left: 0;
+            }
+        }
+        
     }
     article.productosTienda img {
         height: 78%;
@@ -740,6 +759,11 @@ $tituloVitrina:( Index: black, Tienda: black);
     section#tienda .productosTienda {
         margin-top: 110px;
         margin-bottom: 35px;
+        div{
+            button{
+                margin-left: 10px;
+            }
+        }
     }
     article.productosTienda img {
         height: 100%;

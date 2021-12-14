@@ -6,7 +6,8 @@
         "price": 349,
         "sizeMin": 6,
         "sizeMax": 16,
-        "imgUrl": "../img/products/ShortCamuf.png"
+        "imgUrl": "../img/products/ShortCamuf.png",
+        "sizeTotal": 6
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "price": 299,
         "sizeMin": 6,
         "sizeMax": 16,
-        "imgUrl": "../img/products/ShortNiño.png"
+        "imgUrl": "../img/products/ShortNiño.png",
+        "sizeTotal": 6
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "price": 309,
         "sizeMin": 4,
         "sizeMax": 16,
-        "imgUrl": "../img/products/Remera2.png"
+        "imgUrl": "../img/products/Remera2.png",
+        "sizeTotal": 7
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
         "price": 529,
         "sizeMin": 4,
         "sizeMax": 16,
-        "imgUrl": "../img/products/BuzoNiño.png"
+        "imgUrl": "../img/products/BuzoNiño.png",
+        "sizeTotal": 7
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
         "price": 589,
         "sizeMin": 4,
         "sizeMax": 16,
-        "imgUrl": "../img/products/CamperaNiño.png"
+        "imgUrl": "../img/products/CamperaNiño.png",
+        "sizeTotal": 7
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
         "price": 269,
         "sizeMin": 4,
         "sizeMax": 16,
-        "imgUrl": "../img/products/ShortNena.png"
+        "imgUrl": "../img/products/ShortNena.png",
+        "sizeTotal": 7
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
         "price": 449,
         "sizeMin": 6,
         "sizeMax": 16,
-        "imgUrl": "../img/products/PantNena.png"
+        "imgUrl": "../img/products/PantNena.png",
+        "sizeTotal": 6
     },
     {
         "id": 8,
@@ -69,7 +76,8 @@
         "price": 299,
         "sizeMin": 1,
         "sizeMax": 5,
-        "imgUrl": "../img/products/ChombaBebe.png"
+        "imgUrl": "../img/products/ChombaBebe.png",
+        "sizeTotal": 5
     },
     {
         "id": 9,
@@ -78,7 +86,8 @@
         "price": 249,
         "sizeMin": 2,
         "sizeMax": 6,
-        "imgUrl": "../img/products/ShortNbb.png"
+        "imgUrl": "../img/products/ShortNbb.png",
+        "sizeTotal": 5
     }
     
 ]
