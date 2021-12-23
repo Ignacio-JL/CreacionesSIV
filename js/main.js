@@ -13,6 +13,7 @@ class Producto{
 }
 
 let productos = [];
+let totalCarrito = 0;
 
 function mostrarProductos(lista){
         $('#tienda').html(''); //Evita recargar nuevamente la lista cuando se llame a eventos ordenar y filtrar
@@ -28,7 +29,7 @@ function mostrarProductos(lista){
                             <li>Talles ${prod.tMin} al ${prod.tMax}</li>
                         </ul>
                         <div class="reset">
-                            <span class="textInfo">Pack $${prod.tTotal * prod.precio}</span><button class="btn btn-primary" id="addCarrito" type="submit">Agregar al carrito</button>
+                            <span class="textInfo">Pack $${prod.tTotal * prod.precio}</span><button class="btn btn-primary" onclick="addCarrito(${prod.id})" type="submit">Agregar al carrito</button>
                         </div>
                         </article>`;
             
@@ -38,9 +39,58 @@ function mostrarProductos(lista){
         sessionStorage.setItem("Productos", JSON.stringify(productos));
 
 }
+//Carrito
+function agregarStorage(producto){
+    let storage = localStorage.getItem('carrito') ? JSON.parse(localStorage.getItem("carrito")) : [];
+    storage.push(producto);
+    return storage;
+}
+function guardarStorage(array){
+    localStorage.setItem("carrito", JSON.stringify(array));
+}
+function addCarrito(id){
+    let select = productos.find(e => e.id == id);
+    guardarStorage(agregarStorage(select));
+    mostrarCarrito(JSON.parse(localStorage.getItem('carrito')));
+}
+function mostrarCarrito(array){
+    let i = 1;
+    document.getElementById('miCarrito').innerHTML="";
+    for(e of array){
+        document.getElementById('miCarrito').innerHTML+=`
+        <tr>
+            <th scope="row">${i++}</th>
+            <td>${e.nombre}</td>
+            <td><img src="${e.src}" alt="${e.nombre}" style="height: 120px"></td>
+            <td>${e.precio * e.tTotal}</td>
+            <td> <button class="btn btn-danger" onclick="deleteOfCarrito(${e.id})">X</td>
+        </tr>
+        `
+    }
+    mostrarTotal();
+}
+function mostrarTotal(){
+    let carrito = JSON.parse(localStorage.getItem('carrito'));
+    let total=0;
+    carrito.forEach(element => {
+        total += (element.precio * element.tTotal);
+    });
+    document.getElementById('total').innerHTML = "";
+    document.getElementById('total').innerHTML = `TOTAL ${total}`;
+}
+
+function deleteOfCarrito(id){
+    let carrito = JSON.parse(localStorage.getItem('carrito'));
+    let carritoNuevo = carrito.filter(e => e.id != id);
+    guardarStorage(carritoNuevo);
+    mostrarCarrito(JSON.parse(localStorage.getItem('carrito')));
+}
+
+
+
 
 //AJAX
-const url = "/js/stock.json";
+const url = "../js/stock.json";
 const cargarArray = () => {
     fetch(url)
         .then((response) => response.json())
